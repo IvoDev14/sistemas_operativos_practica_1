@@ -2,5 +2,5 @@
 CLAUDE.md
 
 *.o
-*.c
+*.a
 test
