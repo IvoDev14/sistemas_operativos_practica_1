@@ -5,8 +5,8 @@ int head(int N){
 	char line[BUFSIZ];
 	
 	for (; N > 0; N--){
-		fgets(line, BUFSIZ, stdin)
-		printf("%s", line)
+		fgets(line, BUFSIZ, stdin);
+		printf("%s", line);
 	}
 
 	return 0;
