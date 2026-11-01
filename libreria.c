@@ -21,7 +21,7 @@ int head(int N){
 	
 	for (; N > 0; N--){
 		// Comprobamos si ha llegado al final del fichero para que no siga leyendo
-		if (fgets(line, BUFSIZ, stdin) != NULL){
+		if (fgets(line, BUFSIZ, stdin) == NULL){
 			return 0;
 		}
 
