@@ -31,8 +31,10 @@ int main(int argc, char *argv[]){
             if (head(num_lines) != 0) return 1;
             return 0;
         case MODE_TAIL:
+            if (tail(num_lines) != 0) return 1;
             return 0;
         case MODE_LONGLINES:
+            if (longlines(num_lines) != 0) return 1;
             return 0;
         case ERR_NUM_PARAMS:
             fprintf(stderr, "ERROR: No se ha introducido un numero valido de parametros\n");
