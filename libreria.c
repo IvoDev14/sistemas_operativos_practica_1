@@ -5,7 +5,11 @@ int head(int N){
 	char line[BUFSIZ];
 	
 	for (; N > 0; N--){
-		fgets(line, BUFSIZ, stdin);
+		// Comprobamos si ha llegado al final del fichero para que no siga leyendo
+		if (fgets(line, BUFSIZ, stdin) != NULL){
+			return 0;
+		}
+
 		printf("%s", line);
 	}
 
