@@ -100,9 +100,14 @@ int read_lines(CircularBuffer b){
 	}
 	
 	for (int i = 0; i < b.num_lines; i++){
-		if(local_index == b.capacity - 1) local_index = 0;
+		
 		printf("%s", b.buffer[local_index]);
-		local_index += 1;
+
+		if(local_index == b.capacity - 1){
+			local_index = 0;
+		} else {
+			local_index += 1;
+		}
 	}
 
 	return 0;
